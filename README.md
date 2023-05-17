@@ -1,0 +1,1 @@
+# hollowdb-next-auth
