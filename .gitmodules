@@ -1,0 +1,3 @@
+[submodule "hollowdb-express"]
+	path = hollowdb-express
+	url = git@github.com:firstbatchxyz/hollowdb-express.git
