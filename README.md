@@ -5,6 +5,26 @@
 
 This is a demo web-app for demonstrating how HollowDB can be used for storing profiles on-chain without revealing any information about your wallet address and have the complete control over the data.
 
+## Purpose
+
+This demo tries to highlight 2 key points of HollowDB and provides an example code base to get started with HollowDB and generating zk-proofs in browser.
+
+### Untrackable
+
+Each key in the key-value pair represents a hashed signature of a specific message. This hashed signature is untraceable, meaning it is impossible to identify them, ensuring that users can maintain their anonymity while storing their data.
+
+Anonimity of the transaction is achieved through using another wallet to do the transaction. This demo uses a server with a wallet to execute the given transactions
+
+Here is a [transaction](https://sonar.warp.cc/#/app/interaction/H9d1ORbrpyeUTqQGD3U-gBWcbLSlYRDyks8xGoXwwNw) I've created earlier, check it out yourself and try to find any connection to my address.
+
+### Unchangable
+
+The hashed signature also has a crucial role in data management. Because the key is tied to a specific hashed signature, only the original signer, who holds the private key, can update the information. This is achieved by generating a zk-proof because a valid proof requires the pre-image of the hashed signature.
+
+This mechanism provides users with exclusive control over their on-chain data, ensuring that they can manage their presence securely and independently.
+
+This means you cannot change a value put with someone else's key. There is a **Can't be Changed** section on the frontend, it has a input box for you to try and change an existing key by inputting the pre-image of the key. Best of luck!
+
 ## Prerequisites
 
 The following must be provided to the express server:
