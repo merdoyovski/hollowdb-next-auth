@@ -30,7 +30,7 @@ This means you cannot change a value put with someone else's key. There is a **C
 The following must be provided to the express server:
 
 - A HollowDB contract tx address
-  - Clone the [HollowDB repo](https://github.com/firstbatchxyz/hollowdb) and deploy a contract. Refer to the [HollowDB docs](docs.hollowdb.xyz) for more information
+  - Clone the [HollowDB repo](https://github.com/firstbatchxyz/hollowdb) and deploy a contract. Refer to the [HollowDB docs](https://docs.hollowdb.xyz) for more information
   - Alternatively, here is a contract address if you don't want to deploy it yourself: `Dh2aTDs1BV-d-8KYNoK_hil0D25_nTe7-1M1Uvh2wTg `
 - A JWK wallet to sign the transactions
   - You can create/retrieve a JWK file from [Arweave Wallet](https://arweave.app/)
