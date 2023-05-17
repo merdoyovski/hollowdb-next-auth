@@ -1,7 +1,13 @@
 {
-  "name": "with-vite",
-  "private": true,
-  "version": "0.0.37",
+  "name": "hollowdb-next-auth-demo",
+  "version": "10.0.0",
+  "description": "Dcentralized and anonymous config storage",
+  "license": "MIT",
+  "homepage": "https://github.com/merdoyovski/hollowdb-next-auth#readme",
+  "author": "FirstBatch Team <dev@firstbatch.xyz>",
+  "contributors": [
+    "Mert Malaz <mert@firstbatch.xyz>"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
