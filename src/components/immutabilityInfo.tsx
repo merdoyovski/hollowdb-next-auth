@@ -19,6 +19,7 @@ import { useForm } from "@mantine/form";
 import { SDK } from "hollowdb";
 import { useEffect, useState } from "react";
 import { CustomSignature, Warp, WarpFactory } from "warp-contracts";
+import Link from "next/link";
 
 const warp = WarpFactory.forMainnet();
 
@@ -155,14 +156,20 @@ export default function ImmutableInfo(props) {
           20332715061423656258515080175565373207
         </Text>
         <Space h="md" />
-        <Anchor
+        <Link
           href="https://sonar.warp.cc/#/app/interaction/H9d1ORbrpyeUTqQGD3U-gBWcbLSlYRDyks8xGoXwwNw"
           target="_blank"
+          passHref
         >
-          <Text ta="center" fz="md" weight={300}>
-            The transaction
-          </Text>
-        </Anchor>
+          {/* without `component="div" this may give hydration error, pretty weird */}
+          {/* the idea is to use something other <a> for the anchor */}
+          <Anchor component="div">
+            <Text ta="center" fz="md" weight={300}>
+              The transaction
+            </Text>
+          </Anchor>
+        </Link>
+
         <Space h="md" />
         <Text ta="center" fz="md" weight={300}>
           Try to modify the data, by providing the correct pre-image
