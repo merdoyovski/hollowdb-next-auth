@@ -9,9 +9,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
-const jsonExample = `
-{
-  "function":"put",
+const jsonExample = `{
   "data":
   {
     "key":"4735904570539279682275507070929548418220332715061423656258515080175565373207",
@@ -76,11 +74,17 @@ export default function TrackableInfo() {
         </Text>
         <Space h="md" />
         <Text ta="center" fz="md" weight={350}>
-          As you see, none of the steps include exposing anything that can give
-          your address out. The only way is to brute force the secret.
+          Here is an example payload uploaded to HollowDB:
         </Text>
         <Space h="md" />
+
         <Code block>{jsonExample}</Code>
+        <Text ta="center" fz="md" weight={350}>
+          As you see, none of the steps or the payload include exposing anything
+          that can give your address out. The only way is to brute force the
+          secret.
+        </Text>
+        <Space h="md" />
       </Collapse>
     </Paper>
   );
