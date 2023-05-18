@@ -50,10 +50,10 @@ function App() {
               styles={{ label: { fontSize: "1rem", fontWeight: "bold" } }}
             />
           </Grid.Col>
-          <Grid.Col span={6}>
+          <Grid.Col span={12}>
             <TrackableInfo></TrackableInfo>
           </Grid.Col>
-          <Grid.Col span={6}>
+          <Grid.Col span={12}>
             <ImmutableInfo useAccount={useAccount}></ImmutableInfo>
           </Grid.Col>
         </Grid>

@@ -147,28 +147,17 @@ export default function ImmutableInfo(props) {
       <Collapse in={opened}>
         <Space h="md" />
         <Text ta="center" fz="md" weight={300}>
-          Here is a an existing key signed by another person. Here is the full
-          key:
+          Here is a an existing key signed by another person. Here is the key
+          and transaction you can examine:
         </Text>
-
-        <Text ta="center" fz="md" weight={300}>
-          47359045705392796822755070709295484182
-          20332715061423656258515080175565373207
-        </Text>
-        <Space h="md" />
-        <Link
+        <a
           href="https://sonar.warp.cc/#/app/interaction/H9d1ORbrpyeUTqQGD3U-gBWcbLSlYRDyks8xGoXwwNw"
           target="_blank"
-          passHref
         >
-          {/* without `component="div" this may give hydration error, pretty weird */}
-          {/* the idea is to use something other <a> for the anchor */}
-          <Anchor component="div">
-            <Text ta="center" fz="md" weight={300}>
-              The transaction
-            </Text>
-          </Anchor>
-        </Link>
+          <Text ta="center" fz="md" weight={300}>
+            4735904570539279682275507070929548418220332715061423656258515080175565373207
+          </Text>
+        </a>
 
         <Space h="md" />
         <Text ta="center" fz="md" weight={300}>

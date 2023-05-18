@@ -63,6 +63,7 @@ export default function ProfileCard(props) {
       notifications.show({
         id: finalizedNotification,
         title: "Failed!",
+        color: "red",
         message: "A profile corresponding to this signature is not found.",
         autoClose: 5000,
       });

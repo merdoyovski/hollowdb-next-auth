@@ -1,5 +1,27 @@
-import { Text, Button, Paper, Group, Collapse, Space } from "@mantine/core";
+import {
+  Text,
+  Button,
+  Paper,
+  Group,
+  Collapse,
+  Space,
+  Code,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+
+const jsonExample = `
+{
+  "function":"put",
+  "data":
+  {
+    "key":"4735904570539279682275507070929548418220332715061423656258515080175565373207",
+    "value":
+    {
+      "pfp":"https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/stock-photography-trends11.jpg",
+      "username":"Merdo"
+    }
+  }
+}`;
 
 export default function TrackableInfo() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -57,6 +79,8 @@ export default function TrackableInfo() {
           As you see, none of the steps include exposing anything that can give
           your address out. The only way is to brute force the secret.
         </Text>
+        <Space h="md" />
+        <Code block>{jsonExample}</Code>
       </Collapse>
     </Paper>
   );
