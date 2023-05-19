@@ -56,7 +56,6 @@ export default function ImmutableInfo(props) {
 
   const attempToChange = async () => {
     if (!hollowdb) {
-      console.log("no hollow", hollowdb);
     } else {
       const notification = "profile-upload";
       const finalizedNotification = "profile-finalized";

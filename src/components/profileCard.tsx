@@ -50,7 +50,6 @@ export default function ProfileCard(props) {
 
     const profile = await getProfile(key);
     const curValue = profile.data.data.value;
-    console.log("profile", profile);
     if (curValue) {
       setProfileLocal(curValue);
       notifications.show({
